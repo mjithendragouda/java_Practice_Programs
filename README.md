@@ -3,3 +3,6 @@
 2. Fibonacci Series
 3. No of digits in a Number
 4. Extracting digits from a number
+5. Inversing given number
+6. Reverse the number
+7. Rotate a number
