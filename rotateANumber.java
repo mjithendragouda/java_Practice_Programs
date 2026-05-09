@@ -27,5 +27,6 @@ public class rotateANumber {
 
         int rot = r*mult+q;
         System.out.println(rot);
+        sc.close();
     }
 }
