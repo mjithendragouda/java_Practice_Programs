@@ -8,3 +8,4 @@
 7. Rotate a number
 8. GCD and LCM of given two numbers
 9. Prime Factorization
+10. Pythagorian Triplets
