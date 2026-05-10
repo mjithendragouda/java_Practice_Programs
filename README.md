@@ -6,3 +6,4 @@
 5. Inversing given number
 6. Reverse the number
 7. Rotate a number
+8. GCD and LCM of given two numbers
