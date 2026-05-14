@@ -23,3 +23,9 @@
 9. Pattern 9
 10. Pattern 10
 11. Pattern 11
+12. Pattern 12
+13. Pattern 13
+14. Pattern 14
+15. Pattern 15
+16. Pattern 16
+17. Pattern 17
