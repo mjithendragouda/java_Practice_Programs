@@ -12,7 +12,7 @@ public class primeFactorization {
                 System.out.print(i + " ");
             }
         }
-        if (n != 1) {
+        if (n >= 1) {
             System.out.print(n);
         }
         sc.close();

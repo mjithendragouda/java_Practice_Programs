@@ -6,12 +6,14 @@ public class reverseANumber {
         System.out.print("Enter a number: ");
         long num = sc.nextLong();
         long n = num;
-        int r;
-        while(n>0){
-            r= (int)n%10;
-            System.out.println(r);
-            n/=10;
+        int rev = 0;
+        int digit;
+        while (n > 0) {
+            digit = (int) n % 10;       //getting digit
+            rev = rev * 10 + digit;     //appending digit 
+            n /= 10;                    //removing last digit
         }
+
         sc.close();
     }
 }
