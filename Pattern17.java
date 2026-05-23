@@ -13,10 +13,9 @@ public class Pattern17 {
                 for(int j=1; j<=n; j++){
                     System.out.print("*\t");
                 }
-            }
-                                
-            else {
-                for (int j = 1; j <= k;j++) {
+            }                                
+            else{
+                for (int j = 1; j <= k; j++) {
 
                     if (j >= con ) {        
                         System.out.print("*\t");
