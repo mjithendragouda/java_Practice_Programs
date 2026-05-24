@@ -5,26 +5,21 @@ public class Pattern18 {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter an odd number: ");
         int n = sc.nextInt();
-        int con = n/2+1;
-        int k=n;
-        for(int i=1; i<=n; i++){
-            for(int j=1; j<=n ; j++ ){
-                if(i==1 || i==n || i==j || j==k ){
+        int con = n / 2 + 1;
+        int k = n;
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n; j++) {
+                if (i == 1 || i == n || i == j || j == k) {
                     System.out.print("*\t");
-                }
-                else if(i>con&&j<i&&j>=con-1){
+                } else if (i > con && j < i && j > k) {
                     System.out.print("*\t");
-                }
-                else {
+                } else {
                     System.out.print("\t");
                 }
             }
             System.out.println();
-            System.out.println();
-            sc.close();
-            
             k--;
-            
         }
+        sc.close();
     }
 }
