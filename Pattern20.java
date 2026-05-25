@@ -20,9 +20,22 @@ public class Pattern20 {
                     } else
                         System.out.print("\t");
                 }
+                //Better Version
+                //  if (j == 1 || j == n) {
+
+                //     System.out.print("* ");
+
+                // } else if (i >= mid && (i == j || i + j == n + 1)) {
+
+                //     System.out.print("* ");
+
+                // } else {
+
+                //     System.out.print("  ");
+                // }
             }
             System.out.println();
-            k--;
+            k--; //not requred for bettern version code
         }
         sc.close();
     }
