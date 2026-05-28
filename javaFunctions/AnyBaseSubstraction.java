@@ -30,12 +30,10 @@ public class AnyBaseSubstraction {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter a number and it's base: ");
-        int num1 = sc.nextInt();
-        int b1 = sc.nextInt();
-        System.out.println("Enter another number and it's base: ");
+        System.out.print("Enter two number and the base: ");
+        int num1 = sc.nextInt();        
         int num2 = sc.nextInt();
-        int b2 = sc.nextInt();
+        int b = sc.nextInt();
         boolean negative = false;
         if(num2 > num1){
             int max = num2;
@@ -43,7 +41,7 @@ public class AnyBaseSubstraction {
             num1 = max;
             negative = true;
         }
-        int result = getSub(num1, num2, b2);
+        int result = getSub(num1, num2, b);
         if(negative){
             System.out.println("Result = -"+result);
         }else{

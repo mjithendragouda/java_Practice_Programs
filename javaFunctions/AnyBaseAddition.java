@@ -10,7 +10,7 @@ public class AnyBaseAddition {
             n1 /= 10;
             n2 /= 10;
             int add = d1 + d2;
-            if (add > b) {
+            if (add >= b) {
                 sum = add - b;
                 cf = 1;
             } else {
@@ -26,13 +26,11 @@ public class AnyBaseAddition {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter a number and its base: ");
-        int num1 = sc.nextInt();
-        int b1 = sc.nextInt();
-        System.out.println("Enter another number and its base: ");
+        System.out.print("Enter two number and the base: ");
+        int num1 = sc.nextInt();        
         int num2 = sc.nextInt();
-        int b2 = sc.nextInt();
-        int addition = getSum(num1, num2, b2);
+        int b = sc.nextInt();
+        int addition = getSum(num1, num2, b);
         System.out.println(addition);
         sc.close();
     }
