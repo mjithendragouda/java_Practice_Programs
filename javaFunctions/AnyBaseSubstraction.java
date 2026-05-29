@@ -14,9 +14,7 @@ public class AnyBaseSubstraction {
             if(d1 < d2){
                 diff = d1+b-d2;
                 cf = 1;
-            }else if(d1 == d2){
-                diff = 0;
-                cf = 0;
+
             }else{
                 diff = d1 - d2;
                 cf = 0;
