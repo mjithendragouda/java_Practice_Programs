@@ -10,7 +10,7 @@ public class DiffOfMaxAndMin {
         }
         
         int diffrence = diffrence(arr);
-        System.err.println("Diffrence of Max and Min val in the array is: "+diffrence);
+        System.out.println("Diffrence of Max and Min val in the array is: "+diffrence);
         sc.close();
     }
     public static int diffrence(int[] arr){
@@ -18,14 +18,14 @@ public class DiffOfMaxAndMin {
         int max = arr[0];
         int min = arr[0];
 
-        for(int i = 0; i<arr.length; i++){
+        for(int i = 1; i<arr.length; i++){
             if(arr[i]>=min){
-                if(arr[i]>=max){
-                    max = arr[i];
-                }
-            }else{
                 min = arr[i];
             }
+            if(arr[i]>=max){
+                max = arr[i];
+            }
+            
         }
         diffrence = max - min;
         return diffrence;
