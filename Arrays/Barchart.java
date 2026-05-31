@@ -8,10 +8,11 @@ public class Barchart {
         int n = sc.nextInt();
         int[] arr = new int[n];
         System.out.print("Enter values of the array:");
-        int max = -1;
-        for(int i = 0; i < arr.length; i++){
+        arr[0]=sc.nextInt();
+        int max = arr[0];
+        for(int i = 1; i < arr.length; i++){
             arr[i] = sc.nextInt();
-            if(max <= arr[i]){
+            if(arr[i]>max){
                 max = arr[i];
             }
         }
@@ -19,7 +20,7 @@ public class Barchart {
         for(int i=max; i>0; i--){
             for(int j=0; j<arr.length; j++){
                
-                if(i<=arr[j]){
+                if(arr[j]>=i){
                     System.out.print("***\t");
                 }else{
                     System.out.print("\t");

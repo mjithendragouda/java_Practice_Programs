@@ -30,8 +30,8 @@ public class SumOfTwoArraysIndividualDigit {
             b = arr1;
             s = arr2;
         }
-        System.out.println("           ----------------");
-        System.out.print("sum  = ");
+        System.out.println("         -----------");
+        System.out.print("sum      = ");
         int sum = 0; int j = 0;
         for(int i=0; i<max; i++){
             if(diff>0){
@@ -49,16 +49,16 @@ public class SumOfTwoArraysIndividualDigit {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         
-        System.out.println("Enter the first array size: ");
+        System.out.print("Enter the first array size: ");
         int n1 = sc.nextInt();
-        System.out.println("Enter another array size: ");
+        System.out.print("Enter another array size: ");
         int n2 = sc.nextInt();
         int[] arr1 = new int[n1];
         int[] arr2 = new int[n2];
         insertion(arr1, "Array 1 ", sc);
         insertion(arr2, "Array 2 ", sc);
-        display(arr1);
-        display(arr2);
+        display(arr1, "Array 1 ");
+        display(arr2, "Array 2 ");
         SumOfArrays(arr1, arr2);
         sc.close();        
     }
