@@ -36,9 +36,9 @@ public class SumOfTwoArrays {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the first array size: ");
+        System.out.print("Enter the first array size: ");
         int n1 = sc.nextInt();
-        System.out.println("Enter another array size: ");
+        System.out.print("Enter another array size: ");
         int n2 = sc.nextInt();
         int[] arr1 = new int[n1];
         int[] arr2 = new int[n2];
