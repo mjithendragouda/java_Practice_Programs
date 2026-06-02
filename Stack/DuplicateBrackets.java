@@ -16,6 +16,7 @@ public class DuplicateBrackets {
                 if(!st.isEmpty() && st.peek()=='('){
                    duplicateBrackets = true; 
                    System.out.println(duplicateBrackets);
+                   sc.close();
                    return;  
                 }
                 while (!st.isEmpty() && st.peek() != '(') {
