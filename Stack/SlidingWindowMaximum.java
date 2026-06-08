@@ -9,16 +9,11 @@ public class SlidingWindowMaximum {
         
         Stack<Integer> st;
         for(int i = 0; i<array.length && start <= array.length-k ; i++){
-            
             st = getStackWindow(array, start, start+k);
             int max = maxOfStack(st);
             display(st, max);
-            start++;          
-
-
+            start++; 
         }
-
-        
     }
 
     public static int maxOfStack(Stack<Integer> s){
