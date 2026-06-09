@@ -59,7 +59,7 @@ public class InfixEvaluation {
             return 1;
         }else if(operartor == '*'){
             return 2;
-        }else{
+        }else{            
             return 2;
         }
     }
