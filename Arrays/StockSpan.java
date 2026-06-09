@@ -11,7 +11,7 @@ public class StockSpan {
             arr[i] = sc.nextInt();
         }
         int[] stockSpan = new int[n];
-        int lastBig = 0;
+       // int lastBig = 0;
         stockSpan[0] = 1;
         System.out.print(stockSpan[0] + " ");
         for (int i = 1; i < n; i++) {
