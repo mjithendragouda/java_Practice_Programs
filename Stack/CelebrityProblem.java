@@ -4,6 +4,9 @@ import java.util.Stack;
 
 //Celebrity rule is everyone must know the celebrity
 //but celebrity must not know anyone
+//array elements must be 0 or 1
+//0 represents don't know
+//1 represents knows 
 
 public class CelebrityProblem {
     public static void main(String[] args) throws Exception{
