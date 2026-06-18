@@ -21,12 +21,15 @@ public class Swap4 {
         int age = per1.age;  // since it is empty and int type value is 0
         per1.age = per2.age; // per2 is not empty so per2 age value assigned to per1 - 20
         per2.age = age; // age is 0 hence per2 age is 0
+        // Here Per2 was still pointing the same oject which was ponted by p2
+        //hence p2 age becomes 0, but name stays as it is
 
         per2 = new Person(); 
 
-        String name = per1.name; // person 1 name is null,
-        per1.name = per2.name; 
-        per2.name = name;
+        String name = per1.name; // per1 name is null,
+        per1.name = per2.name; // per2 become empty because of new ref, hence 
+        per2.name = name; // per2 name is also null, Bcoz name is also null
+        // per2 is a new object/ null object hence p2 name doesn't affected
 
     }
 }
